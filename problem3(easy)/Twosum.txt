@@ -1,0 +1,19 @@
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+       int[] array=new int[2];
+        for(int i=0;i<nums.length;i++) //loop for i
+        {
+            for(int j=i+1;j<nums.length;j++)//loop for j
+            {
+                if(nums[i]+nums[j]==target) 
+                {
+                    int a=0;
+                    array[a]=i;//for 
+                    a++;
+                    array[a]=j;
+                }
+            }
+        }
+        return array;
+    }
+}

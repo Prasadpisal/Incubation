@@ -1,0 +1,26 @@
+Q9. palindrome number (easy)
+class Solution {
+    public  boolean isPalindrome(int x) {
+       
+	    	int r,rev=0,temp;
+	    	temp=x;         //store number in temp to compare
+			while(x>0)
+			{
+				r=x%10;
+				rev=(rev*10)+r;
+				x=x/10;
+			}
+			if(temp==rev)
+				return true;
+			else
+	       
+			return false;
+        
+    }
+
+public static void main(String[] args) {
+	 
+	Solution p=new Solution();
+	System.out.println(p.isPalindrome(121));
+}
+}
